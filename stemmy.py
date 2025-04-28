@@ -38,7 +38,9 @@ def download_file(url, destination_folder):
                     if chunk:  
                         f.write(chunk)
         downloader_msg = colored("Downloaded:", "36", bright=True) 
-        print(f"{downloader_msg} {local_filename}")
+        download_dir_msg = colored(os.getcwd() + f'\\downloads\\', "31", bright=True)
+        local_filename_with_color = colored(f"{local_filename}", "31", bright=True) 
+        print(f'{downloader_msg} "{local_filename}" to {download_dir_msg}{local_filename_with_color}')
     except Exception as e:
         error_message2 = colored("Error downloading", "31", bright=True)
         print(f"{error_message2} {url}: {e}")
