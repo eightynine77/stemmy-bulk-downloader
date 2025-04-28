@@ -1,1 +1,13 @@
 # stemmy
+stemmy is a python script that allows you to download multiple files in bulk
+
+## how to use
+add your links you want to download to the "links.txt" file. 
+
+you add your links into the file like this:
+
+example.com/picture.png
+
+example.com/archive_file.zip
+
+example.com/video.mp4
